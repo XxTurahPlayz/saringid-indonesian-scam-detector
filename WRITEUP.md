@@ -26,8 +26,7 @@ We extended the suggested scam-filter idea in three ways: (1) an Indonesian thre
 
 On the held-out test data (229 messages):
 
-- Majority-class baseline: accuracy 0.498, macro-F1 0.222, fraud precision 0.000, fraud recall 0.000.
-- Always-normal baseline: accuracy 0.498, macro-F1 0.222, fraud precision 0.000, fraud recall 0.000.
+- Always-normal (majority-class) baseline: accuracy 0.498, macro-F1 0.222, fraud precision 0.000, fraud recall 0.000.
 - SaringID: accuracy 0.917, macro-F1 0.903, fraud precision 0.831, fraud recall 0.955.
 
 The detailed classification report shows a Fraud F1-score of 0.89. SaringID correctly identified 64 of 67 fraud messages. It incorrectly classified 13 non-fraud messages as fraud.
