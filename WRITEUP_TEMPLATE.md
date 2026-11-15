@@ -21,10 +21,18 @@ We extended the suggested scam-filter idea in three ways: (1) an Indonesian thre
 **Model:** TF-IDF word unigrams and bigrams plus class-weighted logistic regression. We tuned the fraud-score threshold using F2 on the validation set. The final test set was not used for tuning.
 
 ## Results
-On the held-out test data:
-- Majority-class baseline: accuracy [ ], macro-F1 [ ], fraud precision [ ], fraud recall [ ].
-- SaringID: accuracy [ ], macro-F1 [ ], fraud precision [ ], fraud recall [ ].
-- Synthetic stress test: [report separately; do not combine with the held-out test score].
+
+On the held-out test data (229 messages):
+
+- Majority-class baseline: accuracy 0.498, macro-F1 0.222, fraud precision 0.000, fraud recall 0.000.
+- Always-normal baseline: accuracy 0.498, macro-F1 0.222, fraud precision 0.000, fraud recall 0.000.
+- SaringID: accuracy 0.917, macro-F1 0.903, fraud precision 0.831, fraud recall 0.955.
+
+The detailed classification report shows a Fraud F1-score of 0.89. The confusion matrix shows that SaringID correctly identified 64 of 67 fraud messages. It incorrectly classified 13 non-fraud messages as fraud.
+
+**Synthetic stress test:** [Add the actual results from the synthetic challenge set separately.]
+
+**Where it fails:** [Add one real false positive and one real false negative from the held-out test set.] A likely limitation is that legitimate promotional messages can resemble scam messages. The dataset may also not represent current scam language.
 
 **Where it fails:** [show one false negative and one false positive from the held-out test set]. A likely reason is [careful hypothesis]. The dataset is older and may not represent current scam language; the model can also mistake legitimate promotions for fraud or miss new scam formats.
 
