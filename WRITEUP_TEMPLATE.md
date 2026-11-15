@@ -10,7 +10,7 @@
 An Indonesian phone user may receive unexpected messages about prizes, account problems, delivery fees, loans, or promotions. They need a quick way to decide whether a message deserves extra caution, without assuming every promotion is a scam or every ordinary-looking message is safe.
 
 ## What we built
-SaringID classifies a message into **Normal**, **Potential fraud**, or **Promotion**. It returns model scores, influential text features, and a safety-oriented next step. The primary user is [specific user/persona], who would use the tool when [specific moment].
+SaringID classifies a message into **Normal**, **Potential fraud**, or **Promotion**. It returns model scores, influential text features, and a safety-oriented next step. The primary user is an Indonesian smartphone user who receives unexpected SMS messages and wants help identifying potentially fraudulent messages. They would use SaringID when they receive a suspicious message about banking, digital wallets, prizes, delivery fees, or account verification.
 
 ## What we added
 We extended the suggested scam-filter idea in three ways: (1) an Indonesian three-class distinction between normal messages, fraud-like messages, and promotions; (2) a fraud-alert threshold selected on validation data to emphasise recall; and (3) a separate synthetic challenge set written by our team to probe modern message patterns. The challenge set was not used for training and is not a representative national dataset.
