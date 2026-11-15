@@ -2,9 +2,11 @@
 
 > Replace every bracketed item with your team's real information and actual measured results. Do not invent numbers.
 
-**Track:** AI + Finance  
+**Track:** AI + Finance
+
 **Team:** I GUSTI NGURAH GANESHA KRISHNA
-**Project:** SaringID Indonesian SMS Scam Triage
+
+**Project:** SaringID — Indonesian SMS Scam Triage
 
 ## The problem
 An Indonesian phone user may receive unexpected messages about prizes, account problems, delivery fees, loans, or promotions. They need a quick way to decide whether a message deserves extra caution, without assuming every promotion is a scam or every ordinary-looking message is safe.
