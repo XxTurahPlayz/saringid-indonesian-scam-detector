@@ -1,1 +1,11 @@
-No dataset license is asserted by this repository. Check the original dataset source's license and terms before redistributing data or deploying a public demo. The notebook downloads the dataset at runtime rather than bundling a copy.
+# Dataset Licensing Notice
+
+This repository does not claim ownership of or grant a license to the SMS dataset used by SaringID.
+
+The dataset is obtained from its original source at runtime. Users are responsible for reviewing and complying with the original dataset's license and terms of use before using, modifying, or redistributing the data.
+
+No copy of the dataset is intentionally included in this repository.
+
+If the original dataset's licensing terms cannot be verified, do not redistribute the dataset or assume that it is approved for public or commercial use.
+
+SaringID is an educational hackathon prototype and is not an officially certified fraud-detection service.
