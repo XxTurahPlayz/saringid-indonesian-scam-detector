@@ -1,6 +1,5 @@
 # SaringID — one-page write-up template
 
-> Replace every bracketed item with your team's real information and actual measured results. Do not invent numbers.
 
 **Track:** AI + Finance
 
