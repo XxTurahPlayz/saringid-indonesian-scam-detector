@@ -1,4 +1,4 @@
-# SaringID — one-page write-up template
+# SaringID
 
 
 **Track:** AI + Finance
