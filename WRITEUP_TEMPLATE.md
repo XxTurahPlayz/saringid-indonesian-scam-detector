@@ -3,7 +3,7 @@
 > Replace every bracketed item with your team's real information and actual measured results. Do not invent numbers.
 
 **Track:** AI + Finance  
-**Team:** [names]  
+**Team:** I GUSTI NGURAH GANESHA KRISHNA
 **Project:** SaringID Indonesian SMS Scam Triage
 
 ## The problem
