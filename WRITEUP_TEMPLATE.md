@@ -4,7 +4,7 @@
 
 **Track:** AI + Finance  
 **Team:** [names]  
-**Project:** SaringID — Indonesian SMS Scam Triage
+**Project:** SaringID Indonesian SMS Scam Triage
 
 ## The problem
 An Indonesian phone user may receive unexpected messages about prizes, account problems, delivery fees, loans, or promotions. They need a quick way to decide whether a message deserves extra caution, without assuming every promotion is a scam or every ordinary-looking message is safe.
@@ -30,12 +30,17 @@ On the held-out test data (229 messages):
 
 The detailed classification report shows a Fraud F1-score of 0.89. The confusion matrix shows that SaringID correctly identified 64 of 67 fraud messages. It incorrectly classified 13 non-fraud messages as fraud.
 
-**Synthetic stress test:** [Add the actual results from the synthetic challenge set separately.]
+**Synthetic stress test:** We evaluated SaringID separately on 12 team-written Indonesian SMS examples (4 Normal, 4 Fraud, and 4 Promotion). The model achieved 66.7% accuracy and a macro F1-score of 0.68. For Fraud, precision was 0.50 and recall was 0.75. It correctly classified 8 of the 12 messages.
 
-**Where it fails:** [Add one real false positive and one real false negative from the held-out test set.] A likely limitation is that legitimate promotional messages can resemble scam messages. The dataset may also not represent current scam language.
+The model missed one fraud message about a digital wallet balance supposedly expiring that night. It also incorrectly flagged two normal messages and one legitimate promotional message as fraud. This small, synthetic challenge set is useful for probing model weaknesses, but it is not representative of real-world performance.
 
-**Where it fails:** [show one false negative and one false positive from the held-out test set]. A likely reason is [careful hypothesis]. The dataset is older and may not represent current scam language; the model can also mistake legitimate promotions for fraud or miss new scam formats.
+**Where it fails:**
 
+- **False negative:** "GRATIS internetan 5MB berlaku utk 7 hari hanya..." — The actual label was Fraud, but SaringID predicted Promotion. The model missed a fraud-labelled message because it resembled a promotional offer.
+
+- **False positive:** "Baik Pak, berarti nanti Kamis kami ke kantor lagi" — The actual label was Normal, but SaringID predicted Fraud. This shows that ordinary conversations can sometimes trigger false alerts.
+
+A likely limitation is that messages containing promotional language or unusual wording can confuse the classifier. The dataset may also not represent current scam language.
 ## What we'd do next
 1. Obtain a larger, recent, human-labelled Indonesian dataset with clear permission and more diverse message sources.
 2. Test performance across SMS, WhatsApp-style text, regional language mixing, and evolving scam tactics, with a human review step for uncertain messages.
